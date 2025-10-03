@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海聯會 國文科 考古題系統 - 試卷預覽</title>
+    <style>
+        body {
+            font-family: '微軟正黑體', 'Microsoft JhengHei', sans-serif;
+            line-height: 1.8;
+            background-color: #f4f7f6;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #0056b3;
+            border-bottom: 3px solid #0056b3;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 1.4em;
+            color: #d9534f;
+            margin-top: 20px;
+            padding-left: 10px;
+            border-left: 5px solid #d9534f;
+        }
+        .question-info {
+            background-color: #eaf0f4;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+        .question-info strong {
+            color: #0056b3;
+        }
+        .question-content {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 25px;
+        }
+        .options-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options-list li {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .options-list li:hover {
+            background-color: #f0f8ff;
+        }
+        .highlight {
+            color: #cc0000; /* 用來標示要讀音的字 */
+            font-weight: bold;
+        }
+        .analysis {
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 2px dashed #ccc;
+        }
+        .difficulty-level {
+            font-weight: bold;
+            color: #28a745;
+        }
+        /* 新增的按鈕樣式 */
+        .action-btn {
+            display: block;
+            width: 100%;
+            padding: 15px 20px;
+            margin-top: 25px;
+            background-color: #28a745; /* Green color for success/answer */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+            box-shadow: 0 4px 6px rgba(40, 167, 69, 0.4);
+        }
+        .action-btn:hover {
+            background-color: #218838;
+            transform: translateY(-1px);
+        }
+        /* 解答區塊樣式 */
+        .correct-answer-box {
+            background-color: #e6ffed;
+            border: 2px solid #28a745;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 30px;
+        }
+        .correct-answer-box h3 {
+            color: #28a745;
+            margin-top: 0;
+            border-bottom: 1px dashed #28a745;
+            padding-bottom: 5px;
+            font-size: 1.4em;
+        }
+        .analysis-detail p {
+            margin-bottom: 10px;
+        }
+        .analysis-detail strong {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>海聯會 [國文科] 考古題系統</h1>
+
+        <div class="section-title">出卷與題型選擇</div>
+        <p>已選擇題型：<strong>選擇題 (A)</strong></p>
+
+        <hr>
+
+        <div class="section-title">隨機抽取題目</div>
+        <div class="question-info">
+            <p>已隨機抽取到：<strong>111學年度-單選題-第1題</strong></p>
+            <p>題目來源：111學年度-單選題-第1題（原始 PDF 已找到）</p>
+        </div>
+
+        <div class="section-title">題目原文</div>
+        <div class="question-content">
+            1. 下列「 」中的字，讀音前後相同的是：
+        </div>
+
+        <ul class="options-list">
+            <li>(A) 「<span class="highlight">滄</span>」海桑田／滿目「<span class="highlight">瘡</span>」痍</li>
+            <li>(B) 水流「<span class="highlight">湍</span>」急／「<span class="highlight">惴</span>」慄不安</li>
+            <li>(C) 黃髮垂「<span class="highlight">髫</span>」／千里「<span class="highlight">迢</span>」迢</li>
+            <li>(D) 「<span class="highlight">稗</span>」官野史／「<span class="highlight">睥</span>」睨群雄</li>
+        </ul>
+
+        <hr>
+
+        <div class="analysis">
+            <div class="section-title">題目分析 (供參考)</div>
+            <p><strong>知識點：</strong>本題考查國字讀音的辨識，屬於國學基礎「音韻」與「字音字形」類題目。</p>
+            <p><strong>難易度評分：</strong><span class="difficulty-level">2/5 (基礎程度)</span>，主要測試學生對常見多音字與易混淆字的掌握能力。</p>
+        </div>
+        
+        <!-- 將解答區塊移到分析區塊之後，按鈕之前 -->
+        <div id="answer-section" style="display: none;">
+            <div class="correct-answer-box">
+                <p>這題出自 <strong>111學年度-單選題-第1題</strong>。</p>
+                <h3>根據 111學年度答案卷：</h3>
+                <p>第1題正確答案為 <strong style="font-size: 1.5em;">C</strong>。</p>
+                
+                <p>✅ **正確答案：**</p>
+                <p>(C) 黃髮垂「髫」／千里「迢」迢</p>
+                <p>（兩個字音皆為 tiáo，前後相同）</p>
+
+                <div class="analysis-detail">
+                    <p>🔍 **詳細解析：**</p>
+                    <p>(A) 「滄」(cāng) 與「瘡」(chuāng) → 音不同。</p>
+                    <p>(B) 「湍」(tuān) 與「惴」(zhuì) → 音不同。</p>
+                    <p>(C) 「髫」(tiáo) 與「迢」(tiáo) → 音相同。✅</p>
+                    <p>(D) 「稗」(bài) 與「睥」(pì) → 音不同。</p>
+                </div>
+
+                <hr style="border-top: 1px dashed #ccc;">
+
+                <p>🎯 **學習建議：**</p>
+                <p>此題屬於 **字音辨析** 基礎題，平時可多利用國語字典或教育部「重編國語辭典修訂本」查詢常考的多音字、容易誤讀字，並透過「成語」與「經典文獻」例句加強記憶。</p>
+            </div>
+        </div>
+        
+        <!-- 將按鈕移到最下方 -->
+        <button id="show-answer-btn" class="action-btn">顯示解答與解析</button>
+
+    </div>
+
+    <!-- JavaScript 實現按鈕功能 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const button = document.getElementById('show-answer-btn');
+            const answerSection = document.getElementById('answer-section');
+
+            if (button && answerSection) {
+                button.addEventListener('click', () => {
+                    // 切換解答區塊的顯示狀態
+                    if (answerSection.style.display === 'none') {
+                        answerSection.style.display = 'block';
+                        button.textContent = '隱藏解答與解析';
+                    } else {
+                        answerSection.style.display = 'none';
+                        button.textContent = '顯示解答與解析';
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
